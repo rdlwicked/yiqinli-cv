@@ -1,32 +1,35 @@
 import './style.css';
 
 /* ═══════════ Theme Toggle ═══════════ */
+function getStoredTheme() {
+  return localStorage.getItem('theme');
+}
+
 function getThemePreference() {
-  const saved = localStorage.getItem('theme');
+  const saved = getStoredTheme();
   if (saved) return saved;
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
-function setTheme(theme) {
+function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
 }
 
-// Apply theme immediately (before paint)
-setTheme(getThemePreference());
+applyTheme(getThemePreference());
 
 document.getElementById('theme-toggle').addEventListener('click', () => {
   const current = document.documentElement.getAttribute('data-theme');
   const next = current === 'dark' ? 'light' : 'dark';
   document.documentElement.classList.add('transition');
-  setTheme(next);
+  applyTheme(next);
+  localStorage.setItem('theme', next);
   setTimeout(() => document.documentElement.classList.remove('transition'), 500);
 });
 
 // Listen for system theme changes
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-  if (!localStorage.getItem('theme')) {
-    setTheme(e.matches ? 'dark' : 'light');
+  if (!getStoredTheme()) {
+    applyTheme(e.matches ? 'dark' : 'light');
   }
 });
 
@@ -46,9 +49,12 @@ updateProgress();
 const navToggle = document.getElementById('nav-toggle');
 const navLinks = document.getElementById('nav-links');
 
+navToggle.setAttribute('aria-expanded', 'false');
+
 navToggle.addEventListener('click', () => {
   navToggle.classList.toggle('active');
   navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', String(navLinks.classList.contains('open')));
   document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
 });
 
@@ -56,6 +62,7 @@ navLinks.querySelectorAll('a').forEach((a) => {
   a.addEventListener('click', () => {
     navToggle.classList.remove('active');
     navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   });
 });

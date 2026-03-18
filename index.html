@@ -5,7 +5,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yiqin Li &mdash; Robot Learning Researcher</title>
-  <meta name="description" content="Yiqin Li - Robot learning researcher working on Vision-Language-Action models, embodied AI agents, and dexterous manipulation."/>
+  <meta name="description" content="Yiqin Li - robot learning researcher working on scalable Vision-Language-Action training, embodied AI agents, and dexterous manipulation."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -21,9 +21,9 @@
       <a href="#" class="nav-name"><strong>Yiqin</strong> Li</a>
       <div class="nav-links" id="nav-links">
         <a href="#about">about</a>
-        <a href="#research">research</a>
+        <a href="#research">current work</a>
         <a href="#projects">projects</a>
-        <a href="#experience">experience</a>
+        <a href="#experience">background</a>
         <a href="#life">life</a>
         <a href="/docs/cv.pdf" target="_blank" rel="noopener">cv</a>
       </div>
@@ -47,15 +47,16 @@
           <h1><strong>Yiqin</strong> Li</h1>
           <p class="profile-title">Robot Learning Researcher</p>
           <p class="profile-bio">
-            I'm a Computer Science researcher specialising in robot learning and embodied AI.
+            I work on robot learning, embodied AI, and dexterous manipulation.
             I completed my MEng in Computing (AI &amp; Machine Learning) at
             <strong>Imperial College London</strong> with First-class Honours, where my thesis
-            explored multimodal interaction and data-efficient imitation learning for tabletop manipulation.
+            studied language-guided, closed-loop imitation learning for tabletop manipulation.
           </p>
           <p class="profile-bio">
             Currently a Research Assistant at <strong>Shanghai Jiao Tong University</strong>,
-            I work on VLA model benchmarking and dexterous hand manipulation pipelines.
-            My goal is to build scalable training systems for Vision-Language-Action models.
+            I work on VLA benchmarking and dexterous arm-hand manipulation pipelines.
+            I am broadly interested in scalable Vision-Language-Action training,
+            embodied agents, and contact-rich manipulation.
           </p>
           <div class="profile-links">
             <a href="mailto:yiqinli230@gmail.com">yiqinli230@gmail.com</a>
@@ -63,6 +64,8 @@
             <a href="https://github.com/rdlwicked" target="_blank" rel="noopener">GitHub</a>
             <span class="sep">/</span>
             <a href="https://linkedin.com/in/yiqin-li" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="sep">/</span>
+            <a href="https://drive.google.com/file/d/1K73N2DSxgWx-KpYjoMT5HGPZa2O6FDzf/view" target="_blank" rel="noopener">Thesis</a>
             <span class="sep">/</span>
             <a href="/docs/cv.pdf" target="_blank" rel="noopener">CV</a>
           </div>
@@ -76,31 +79,30 @@
 
   <hr class="divider"/>
 
-  <!-- Research -->
+  <!-- Current Work -->
   <section id="research" class="section">
     <div class="container">
-      <h2><a href="#research" style="color: inherit">research interests</a></h2>
+      <h2><a href="#research" style="color: inherit">current work</a></h2>
       <p class="section-desc">
-        My research targets the scalability bottlenecks in robot learning &mdash; from
-        building embodied AI agents that understand and act in the physical world,
-        to creating autonomous training loops that reduce human supervision.
+        My current work spans VLA evaluation, dexterous robot data pipelines,
+        language-conditioned control, and agent-based robot systems.
       </p>
       <div class="research-list">
         <div class="research-item">
-          <h3>Embodied AI Agents</h3>
-          <p>Building LLM/VLM-powered agents that understand natural language, reason about physical environments, and orchestrate robot behaviour through unified semantic interfaces.</p>
+          <h3>VLA Evaluation and Benchmarking</h3>
+          <p>Tracking model architectures, training data sources, and post-training trends across the VLA landscape to clarify where current systems scale well and where they still depend on human supervision.</p>
         </div>
         <div class="research-item">
-          <h3>Vision-Language-Action Models</h3>
-          <p>Benchmarking and training VLA systems that unify visual perception, language understanding, and motor control within a single network for general-purpose manipulation.</p>
+          <h3>Dexterous Arm-Hand Pipelines</h3>
+          <p>Building teleoperation, data collection, and evaluation infrastructure for real-robot dexterous manipulation, with a focus on arm-hand coordination and contact-rich tasks.</p>
         </div>
         <div class="research-item">
-          <h3>Agent-in-the-Loop Learning</h3>
-          <p>Replacing human supervision with autonomous VLM agents that detect failures, guide recovery, and generate dense reward signals to close the robot self-improvement loop.</p>
+          <h3>Language-Conditioned Manipulation</h3>
+          <p>Designing closed-loop language-guided control systems that decompose tasks, recover from failures, and connect natural-language commands to manipulation policies.</p>
         </div>
         <div class="research-item">
-          <h3>Dexterous Manipulation</h3>
-          <p>Developing teleoperation systems and end-to-end training pipelines for multi-fingered robotic hands, from data collection through sim-to-real deployment.</p>
+          <h3>Agentic Robotics Systems</h3>
+          <p>Exploring how LLM/VLM agents can reason over robot state, select procedures, and reduce human supervision in embodied systems.</p>
         </div>
       </div>
     </div>
@@ -111,7 +113,46 @@
   <!-- Projects -->
   <section id="projects" class="section">
     <div class="container">
-      <h2><a href="#projects" style="color: inherit">selected projects</a></h2>
+      <h2><a href="#projects" style="color: inherit">projects</a></h2>
+
+      <article class="proj">
+        <div class="proj-media proj-media-video">
+          <video muted loop playsinline controls preload="metadata">
+            <source src="/videos/dexterous-hand-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="proj-body">
+          <h3>Dexterous-Hand VLA Pipeline</h3>
+          <p class="proj-meta">Real Robot Pipeline &middot; Teleoperation &middot; 22-DoF Arm-Hand Coordination</p>
+          <p>
+            At Shanghai Jiao Tong University, I am building the teleoperation, data collection,
+            and evaluation stack for a LinkerHand O6 + xArm6 platform. This work grounds the
+            real-robot side of my current interests, especially contact-rich data collection, dexterous
+            action spaces, and deployment-time evaluation.
+          </p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj-media proj-media-video">
+          <video muted loop playsinline controls preload="metadata">
+            <source src="/videos/imitation-learning-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="proj-body">
+          <h3>Language-Guided Imitation Learning</h3>
+          <p class="proj-meta">MEng Thesis &middot; Language-Conditioned Manipulation &middot; Closed-Loop Recovery</p>
+          <p>
+            My MEng thesis built a closed-loop system where an LLM planner decomposes natural-language
+            commands into a sub-task DAG and a behaviour-tree controller orchestrates perception,
+            policy execution, and automatic recovery. The project achieved 100% success on pick-and-place
+            and a 2.4&times; improvement over a code-as-policy baseline.
+          </p>
+          <p class="proj-links">
+            <a href="https://drive.google.com/file/d/1K73N2DSxgWx-KpYjoMT5HGPZa2O6FDzf/view" target="_blank" rel="noopener">Thesis</a>
+          </p>
+        </div>
+      </article>
 
       <article class="proj">
         <div class="proj-media">
@@ -119,11 +160,12 @@
         </div>
         <div class="proj-body">
           <h3>Evo-SOTA &mdash; VLA Benchmark Leaderboard</h3>
-          <p class="proj-meta">VLA &middot; Benchmark &middot; Open Source &middot; 136+ Stars &middot; 8000+ Views</p>
+          <p class="proj-meta">Benchmarking Infrastructure &middot; VLA Landscape Analysis &middot; Open Source</p>
           <p>
-            Built and maintain an open-source leaderboard tracking 136+ Vision-Language-Action
+            I built and maintain an open-source leaderboard tracking 136+ Vision-Language-Action
             models across 6 benchmarks including LIBERO, CALVIN, Meta-World, and RoboChallenge.
-            Features structured metric tables, interactive plots, and direct paper/code links.
+            This project helps me systematically compare architectures, training data sources, and
+            post-training strategies across the current VLA landscape.
           </p>
           <p class="proj-links">
             <a href="https://github.com/rdlwicked/evo-sota" target="_blank" rel="noopener">GitHub</a>
@@ -134,61 +176,21 @@
 
       <article class="proj">
         <div class="proj-media proj-media-video">
-          <video autoplay muted loop playsinline controls>
+          <video muted loop playsinline controls preload="metadata">
             <source src="/videos/roboclaw-demo.mp4" type="video/mp4">
           </video>
         </div>
         <div class="proj-body">
           <h3>RoboClaw &mdash; Embodied AI Assistant</h3>
-          <p class="proj-meta">Embodied AI &middot; LLM Agent &middot; ROS2 &middot; Open Source &middot; 174 Stars</p>
+          <p class="proj-meta">Embodied Agents &middot; ROS2 &middot; Autonomous Data Collection</p>
           <p>
-            An open-source framework for embodied AI assistance that enables natural-language
-            control of robots. Features a unified semantic interface across different robot
-            platforms, an agent layer for dialogue and procedure selection, and an end-to-end
-            ROS2 execution pipeline supporting both simulation and real-robot deployment.
+            RoboClaw is an open-source framework for embodied AI assistance with natural-language
+            robot control, procedure selection, and ROS2 execution across simulation and real robots.
+            It gave me direct experience with agent orchestration and autonomous data-collection loops,
+            which continue to shape how I think about agent-based robotics systems.
           </p>
           <p class="proj-links">
             <a href="https://github.com/MINT-SJTU/RoboClaw" target="_blank" rel="noopener">GitHub</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="proj">
-        <div class="proj-media proj-media-video">
-          <video autoplay muted loop playsinline controls>
-            <source src="/videos/dexterous-hand-demo.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="proj-body">
-          <h3>Dexterous-Hand VLA Pipeline</h3>
-          <p class="proj-meta">VLA &middot; Dexterous Hand &middot; Real Robot &middot; ROS2 &middot; Ongoing</p>
-          <p>
-            Building a complete pipeline for dexterous manipulation at Shanghai Jiao Tong University:
-            a teleoperation system integrating LinkerHand O6 and xArm6 via ROS2 with a UDCAP glove,
-            a lightweight VLA model adapted for 22-DoF arm-hand coordination, and systematic
-            evaluation from simulation to real-robot deployment.
-          </p>
-        </div>
-      </article>
-
-      <article class="proj">
-        <div class="proj-media proj-media-video">
-          <video autoplay muted loop playsinline controls>
-            <source src="/videos/imitation-learning-demo.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="proj-body">
-          <h3>Language-Guided Imitation Learning</h3>
-          <p class="proj-meta">Imitation Learning &middot; LLM Planning &middot; PyBullet &middot; Franka Panda &middot; MEng Thesis</p>
-          <p>
-            MEng thesis at Imperial College London: a closed-loop system where an LLM planner
-            decomposes natural-language commands into a sub-task DAG, a behaviour-tree controller
-            orchestrates perception and policy execution with automatic failure recovery,
-            and an interactive interface lets non-expert users teach new behaviours on the fly.
-            Achieved 100% on pick-and-place, 2.4&times; improvement vs code-as-policy baseline.
-          </p>
-          <p class="proj-links">
-            <a href="https://drive.google.com/file/d/1K73N2DSxgWx-KpYjoMT5HGPZa2O6FDzf/view" target="_blank" rel="noopener">Thesis</a>
           </p>
         </div>
       </article>
@@ -200,13 +202,13 @@
   <!-- Experience -->
   <section id="experience" class="section">
     <div class="container">
-      <h2><a href="#experience" style="color: inherit">experience</a></h2>
+      <h2><a href="#experience" style="color: inherit">background</a></h2>
       <div class="exp-list">
         <div class="exp-item">
           <div class="exp-date">2025 &mdash; Present</div>
           <div class="exp-body">
             <h3>Research Assistant &middot; Shanghai Jiao Tong University</h3>
-            <p>VLA model benchmarking (Evo-SOTA) and dexterous-hand manipulation research under Prof. Bo Zhao. Building teleoperation, training, and evaluation pipelines for real-robot arm-hand coordination.</p>
+            <p>VLA benchmarking (Evo-SOTA) and dexterous-hand manipulation research. Building teleoperation, training, and evaluation pipelines for real-robot arm-hand coordination.</p>
           </div>
         </div>
         <div class="exp-item">
@@ -241,9 +243,8 @@
     <div class="container">
       <h2><a href="#life" style="color: inherit">beyond the lab</a></h2>
       <p class="section-desc">
-        When I'm not training robots, you'll find me on a rock face or at the bouldering gym.
-        I summited Kilimanjaro, played on Imperial College's Men's 1st Basketball team,
-        and share my home with three cats.
+        Outside research, I spend most of my time climbing. I summited Kilimanjaro,
+        played on Imperial College's Men's 1st Basketball team, and share my home with three cats.
       </p>
       <div class="life-grid">
         <div class="life-card">
@@ -275,8 +276,8 @@
     <div class="container">
       <h2><a href="#contact" style="color: inherit">contact</a></h2>
       <p class="section-desc">
-        I'm always open to discussing research collaborations, PhD opportunities,
-        or anything related to robot learning.
+        I am happy to discuss research, engineering work, or collaborations in
+        robot learning and embodied AI.
       </p>
       <div class="contact-row">
         <a href="mailto:yiqinli230@gmail.com">yiqinli230@gmail.com</a>
@@ -284,8 +285,10 @@
         <a href="https://github.com/rdlwicked" target="_blank" rel="noopener">GitHub</a>
         <span class="sep">/</span>
         <a href="https://linkedin.com/in/yiqin-li" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="sep">/</span>
+        <a href="https://drive.google.com/file/d/1K73N2DSxgWx-KpYjoMT5HGPZa2O6FDzf/view" target="_blank" rel="noopener">Thesis</a>
       </div>
-      <p class="footer-note">Yiqin Li &middot; 2026</p>
+      <p class="footer-note">Updated March 2026</p>
     </div>
   </footer>
 
