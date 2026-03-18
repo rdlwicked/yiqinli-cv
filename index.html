@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yiqin Li &mdash; Robot Learning Researcher</title>
+  <meta name="description" content="Yiqin Li - Robot learning researcher working on Vision-Language-Action models, embodied AI agents, and dexterous manipulation."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Progress Bar -->
+  <progress id="progress" value="0" max="100"></progress>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-name"><strong>Yiqin</strong> Li</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">about</a>
+        <a href="#research">research</a>
+        <a href="#projects">projects</a>
+        <a href="#experience">experience</a>
+        <a href="#life">life</a>
+        <a href="/docs/cv.pdf" target="_blank" rel="noopener">cv</a>
+      </div>
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="profile">
+        <div class="profile-info">
+          <h1><strong>Yiqin</strong> Li</h1>
+          <p class="profile-title">Robot Learning Researcher</p>
+          <p class="profile-bio">
+            I'm a Computer Science researcher specialising in robot learning and embodied AI.
+            I completed my MEng in Computing (AI &amp; Machine Learning) at
+            <strong>Imperial College London</strong> with First-class Honours, where my thesis
+            explored multimodal interaction and data-efficient imitation learning for tabletop manipulation.
+          </p>
+          <p class="profile-bio">
+            Currently a Research Assistant at <strong>Shanghai Jiao Tong University</strong>,
+            I work on VLA model benchmarking and dexterous hand manipulation pipelines.
+            My goal is to build scalable training systems for Vision-Language-Action models.
+          </p>
+          <div class="profile-links">
+            <a href="mailto:yiqinli230@gmail.com">yiqinli230@gmail.com</a>
+            <span class="sep">/</span>
+            <a href="https://github.com/rdlwicked" target="_blank" rel="noopener">GitHub</a>
+            <span class="sep">/</span>
+            <a href="https://linkedin.com/in/yiqin-li" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="sep">/</span>
+            <a href="/docs/cv.pdf" target="_blank" rel="noopener">CV</a>
+          </div>
+        </div>
+        <div class="profile-photo">
+          <img src="/images/profile.jpg" alt="Yiqin Li" loading="eager"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- Research -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2><a href="#research" style="color: inherit">research interests</a></h2>
+      <p class="section-desc">
+        My research targets the scalability bottlenecks in robot learning &mdash; from
+        building embodied AI agents that understand and act in the physical world,
+        to creating autonomous training loops that reduce human supervision.
+      </p>
+      <div class="research-list">
+        <div class="research-item">
+          <h3>Embodied AI Agents</h3>
+          <p>Building LLM/VLM-powered agents that understand natural language, reason about physical environments, and orchestrate robot behaviour through unified semantic interfaces.</p>
+        </div>
+        <div class="research-item">
+          <h3>Vision-Language-Action Models</h3>
+          <p>Benchmarking and training VLA systems that unify visual perception, language understanding, and motor control within a single network for general-purpose manipulation.</p>
+        </div>
+        <div class="research-item">
+          <h3>Agent-in-the-Loop Learning</h3>
+          <p>Replacing human supervision with autonomous VLM agents that detect failures, guide recovery, and generate dense reward signals to close the robot self-improvement loop.</p>
+        </div>
+        <div class="research-item">
+          <h3>Dexterous Manipulation</h3>
+          <p>Developing teleoperation systems and end-to-end training pipelines for multi-fingered robotic hands, from data collection through sim-to-real deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2><a href="#projects" style="color: inherit">selected projects</a></h2>
+
+      <article class="proj">
+        <div class="proj-media">
+          <img src="/images/evo-sota-leaderboard.png" alt="Evo-SOTA VLA Benchmark Leaderboard" loading="lazy"/>
+        </div>
+        <div class="proj-body">
+          <h3>Evo-SOTA &mdash; VLA Benchmark Leaderboard</h3>
+          <p class="proj-meta">VLA &middot; Benchmark &middot; Open Source &middot; 136+ Stars &middot; 8000+ Views</p>
+          <p>
+            Built and maintain an open-source leaderboard tracking 136+ Vision-Language-Action
+            models across 6 benchmarks including LIBERO, CALVIN, Meta-World, and RoboChallenge.
+            Features structured metric tables, interactive plots, and direct paper/code links.
+          </p>
+          <p class="proj-links">
+            <a href="https://github.com/rdlwicked/evo-sota" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj-media proj-media-video">
+          <video autoplay muted loop playsinline controls>
+            <source src="/videos/roboclaw-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="proj-body">
+          <h3>RoboClaw &mdash; Embodied AI Assistant</h3>
+          <p class="proj-meta">Embodied AI &middot; LLM Agent &middot; ROS2 &middot; Open Source &middot; 174 Stars</p>
+          <p>
+            An open-source framework for embodied AI assistance that enables natural-language
+            control of robots. Features a unified semantic interface across different robot
+            platforms, an agent layer for dialogue and procedure selection, and an end-to-end
+            ROS2 execution pipeline supporting both simulation and real-robot deployment.
+          </p>
+          <p class="proj-links">
+            <a href="https://github.com/MINT-SJTU/RoboClaw" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj-media proj-media-video">
+          <video autoplay muted loop playsinline controls>
+            <source src="/videos/dexterous-hand-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="proj-body">
+          <h3>Dexterous-Hand VLA Pipeline</h3>
+          <p class="proj-meta">VLA &middot; Dexterous Hand &middot; Real Robot &middot; ROS2 &middot; Ongoing</p>
+          <p>
+            Building a complete pipeline for dexterous manipulation at Shanghai Jiao Tong University:
+            a teleoperation system integrating LinkerHand O6 and xArm6 via ROS2 with a UDCAP glove,
+            a lightweight VLA model adapted for 22-DoF arm-hand coordination, and systematic
+            evaluation from simulation to real-robot deployment.
+          </p>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj-media proj-media-video">
+          <video autoplay muted loop playsinline controls>
+            <source src="/videos/imitation-learning-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="proj-body">
+          <h3>Language-Guided Imitation Learning</h3>
+          <p class="proj-meta">Imitation Learning &middot; LLM Planning &middot; PyBullet &middot; Franka Panda &middot; MEng Thesis</p>
+          <p>
+            MEng thesis at Imperial College London: a closed-loop system where an LLM planner
+            decomposes natural-language commands into a sub-task DAG, a behaviour-tree controller
+            orchestrates perception and policy execution with automatic failure recovery,
+            and an interactive interface lets non-expert users teach new behaviours on the fly.
+            Achieved 100% on pick-and-place, 2.4&times; improvement vs code-as-policy baseline.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2><a href="#experience" style="color: inherit">experience</a></h2>
+      <div class="exp-list">
+        <div class="exp-item">
+          <div class="exp-date">2025 &mdash; Present</div>
+          <div class="exp-body">
+            <h3>Research Assistant &middot; Shanghai Jiao Tong University</h3>
+            <p>VLA model benchmarking (Evo-SOTA) and dexterous-hand manipulation research under Prof. Bo Zhao. Building teleoperation, training, and evaluation pipelines for real-robot arm-hand coordination.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-date">2025</div>
+          <div class="exp-body">
+            <h3>Applied Scientist Intern &middot; Thomson Reuters Labs</h3>
+            <p>Developed agentic capabilities for Westlaw Deep Research Agent including multi-agent workflow orchestration. Benchmarked and fine-tuned small language models for guardrail classification.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-date">2021 &mdash; 2025</div>
+          <div class="exp-body">
+            <h3>MEng Computing (AI &amp; ML) &middot; Imperial College London</h3>
+            <p>First-class Honours. Thesis on multimodal imitation learning for tabletop manipulation. Coursework in deep learning, computer vision, reinforcement learning, NLP, and robotics.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-date">2024</div>
+          <div class="exp-body">
+            <h3>NLP Researcher Intern &middot; Huawei</h3>
+            <p>Built LLM-based pipelines for automated knowledge-graph construction on large-scale GPU clusters. Acknowledged in a Findings of ACL 2025 paper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- Beyond the Lab -->
+  <section id="life" class="section">
+    <div class="container">
+      <h2><a href="#life" style="color: inherit">beyond the lab</a></h2>
+      <p class="section-desc">
+        When I'm not training robots, you'll find me on a rock face or at the bouldering gym.
+        I summited Kilimanjaro, played on Imperial College's Men's 1st Basketball team,
+        and share my home with three cats.
+      </p>
+      <div class="life-grid">
+        <div class="life-card">
+          <img src="/images/bouldering.jpg" alt="Bouldering" loading="lazy"/>
+        </div>
+        <div class="life-card">
+          <img src="/images/outdoor-climbing.jpg" alt="Rock climbing outdoors" loading="lazy"/>
+        </div>
+        <div class="life-card">
+          <img src="/images/rock-climbing.jpg" alt="Rock climbing" loading="lazy"/>
+        </div>
+        <div class="life-card">
+          <img src="/images/cats.jpg" alt="Cats" loading="lazy"/>
+        </div>
+        <div class="life-card">
+          <img src="/images/kilimanjaro-summit.jpg" alt="Kilimanjaro summit" loading="lazy"/>
+        </div>
+        <div class="life-card">
+          <img src="/images/basketball-team.jpg" alt="Imperial Basketball team" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- Contact -->
+  <footer id="contact" class="section">
+    <div class="container">
+      <h2><a href="#contact" style="color: inherit">contact</a></h2>
+      <p class="section-desc">
+        I'm always open to discussing research collaborations, PhD opportunities,
+        or anything related to robot learning.
+      </p>
+      <div class="contact-row">
+        <a href="mailto:yiqinli230@gmail.com">yiqinli230@gmail.com</a>
+        <span class="sep">/</span>
+        <a href="https://github.com/rdlwicked" target="_blank" rel="noopener">GitHub</a>
+        <span class="sep">/</span>
+        <a href="https://linkedin.com/in/yiqin-li" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer-note">Yiqin Li &middot; 2026</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt=""/>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
