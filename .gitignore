@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+/tmp/
+/output/
+/private/
 
 # Template reference (not part of the site)
 public/Shiki42.github.io-main

@@ -4,8 +4,8 @@
   <meta charset="UTF-8"/>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yiqin Li &mdash; Robot Learning Researcher</title>
-  <meta name="description" content="Yiqin Li - robot learning researcher working on scalable Vision-Language-Action training, embodied AI agents, and dexterous manipulation."/>
+  <title>Yiqin Li &mdash; PhD Student at UCL</title>
+  <meta name="description" content="Yiqin Li - PhD student at UCL, supervised by Zhibin Li. Research interests in multimodal foundation models, low-latency visuomotor policies, world models, and physical interaction."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -21,11 +21,11 @@
       <a href="#" class="nav-name"><strong>Yiqin</strong> Li</a>
       <div class="nav-links" id="nav-links">
         <a href="#about">about</a>
-        <a href="#research">current work</a>
+        <a href="#research">research interests</a>
         <a href="#projects">projects</a>
         <a href="#experience">background</a>
         <a href="#life">life</a>
-        <a href="/docs/cv.pdf" target="_blank" rel="noopener">cv</a>
+        <a href="/docs/cv.pdf?v=79b750417c79" target="_blank" rel="noopener">cv</a>
       </div>
       <div class="nav-right">
         <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
@@ -45,18 +45,19 @@
       <div class="profile">
         <div class="profile-info">
           <h1><strong>Yiqin</strong> Li</h1>
-          <p class="profile-title">Robot Learning Researcher</p>
+          <p class="profile-title">PhD Student &middot; University College London</p>
           <p class="profile-bio">
-            I work on robot learning, embodied AI, and dexterous manipulation.
-            I completed my MEng in Computing (AI &amp; Machine Learning) at
-            <strong>Imperial College London</strong> with First-class Honours, where my thesis
-            studied language-guided, closed-loop imitation learning for tabletop manipulation.
+            I am a PhD student at <strong>University College London (UCL)</strong>,
+            supervised by <a href="https://www.linkedin.com/in/zhibin-alex-li/" target="_blank" rel="noopener">Zhibin Li</a>.
+            I received my MEng in Computing (AI &amp; Machine Learning) from
+            <strong>Imperial College London</strong> with First-class Honours.
           </p>
           <p class="profile-bio">
-            Currently a Research Assistant at <strong>Shanghai Jiao Tong University</strong>,
-            I work on VLA benchmarking and dexterous arm-hand manipulation pipelines.
-            I am broadly interested in scalable Vision-Language-Action training,
-            embodied agents, and contact-rich manipulation.
+            My research interests lie in combining <strong>multimodal foundation models</strong>
+            with <strong>low-latency visuomotor policies</strong> to build robust robot systems
+            that operate reliably in the real world. I am also interested in
+            <strong>world models and foundation models grounded in physical interaction</strong>,
+            particularly how prediction and action can be learned together.
           </p>
           <div class="profile-links">
             <a href="mailto:yiqinli230@gmail.com">yiqinli230@gmail.com</a>
@@ -67,7 +68,7 @@
             <span class="sep">/</span>
             <a href="https://drive.google.com/file/d/1K73N2DSxgWx-KpYjoMT5HGPZa2O6FDzf/view" target="_blank" rel="noopener">Thesis</a>
             <span class="sep">/</span>
-            <a href="/docs/cv.pdf" target="_blank" rel="noopener">CV</a>
+            <a href="/docs/cv.pdf?v=79b750417c79" target="_blank" rel="noopener">CV</a>
           </div>
         </div>
         <div class="profile-photo">
@@ -79,30 +80,22 @@
 
   <hr class="divider"/>
 
-  <!-- Current Work -->
+  <!-- Research Interests -->
   <section id="research" class="section">
     <div class="container">
-      <h2><a href="#research" style="color: inherit">current work</a></h2>
+      <h2><a href="#research" style="color: inherit">research interests</a></h2>
       <p class="section-desc">
-        My current work spans VLA evaluation, dexterous robot data pipelines,
-        language-conditioned control, and agent-based robot systems.
+        How can robots connect broad multimodal knowledge with responsive control,
+        and learn predictive models through physical interaction?
       </p>
       <div class="research-list">
         <div class="research-item">
-          <h3>VLA Evaluation and Benchmarking</h3>
-          <p>Tracking model architectures, training data sources, and post-training trends across the VLA landscape to clarify where current systems scale well and where they still depend on human supervision.</p>
+          <h3>Foundation Models &amp; Real-Time Control</h3>
+          <p>Combining multimodal foundation models with low-latency visuomotor policies, with an emphasis on responsive closed-loop behaviour and reliable deployment on real robots.</p>
         </div>
         <div class="research-item">
-          <h3>Dexterous Arm-Hand Pipelines</h3>
-          <p>Building teleoperation, data collection, and evaluation infrastructure for real-robot dexterous manipulation, with a focus on arm-hand coordination and contact-rich tasks.</p>
-        </div>
-        <div class="research-item">
-          <h3>Language-Conditioned Manipulation</h3>
-          <p>Designing closed-loop language-guided control systems that decompose tasks, recover from failures, and connect natural-language commands to manipulation policies.</p>
-        </div>
-        <div class="research-item">
-          <h3>Agentic Robotics Systems</h3>
-          <p>Exploring how LLM/VLM agents can reason over robot state, select procedures, and reduce human supervision in embodied systems.</p>
+          <h3>World Models &amp; Physical Interaction</h3>
+          <p>Exploring how world models and foundation models can learn from physical interaction, and how predictive representations can support robot learning, planning, and control.</p>
         </div>
       </div>
     </div>
@@ -113,7 +106,34 @@
   <!-- Projects -->
   <section id="projects" class="section">
     <div class="container">
-      <h2><a href="#projects" style="color: inherit">projects</a></h2>
+      <h2><a href="#projects" style="color: inherit">selected research &amp; projects</a></h2>
+
+      <article class="proj proj-featured" id="rai">
+        <figure class="proj-figure">
+          <div class="proj-media proj-media-video">
+            <video muted loop playsinline controls preload="metadata" poster="/images/rai-video-poster.jpg" aria-label="RAI real-robot manipulation project video">
+              <source src="/videos/rai-demo.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="/videos/rai-demo.mp4">Download the RAI project video</a>.
+            </video>
+          </div>
+          <figcaption>From demonstrations to accelerated, human-corrected robot experience.</figcaption>
+        </figure>
+        <div class="proj-body">
+          <p class="proj-eyebrow">UCL Research Assistant &middot; April &ndash; October 2026</p>
+          <h3>RAI: Recursive Accelerated Imitation for Robot Manipulation</h3>
+          <p class="proj-meta">Interactive Imitation Learning &middot; Contact-Rich Manipulation</p>
+          <p>
+            RAI closes the loop between imitation learning and deployment: each round executes
+            the current policy faster, records its rollouts with targeted human corrections,
+            and trains the next policy on the accumulated experience. The multimodal
+            flow-matching policy combines vision, proprioception, and estimated contact forces.
+          </p>
+          <p>
+            During my research assistantship at UCL, my work on the project spanned real-robot teleoperation, data collection and conversion,
+            and real-time chunked policy deployment, connecting 30 Hz policy actions to 200 Hz arm control.
+          </p>
+        </div>
+      </article>
 
       <article class="proj">
         <div class="proj-media proj-media-video">
@@ -125,7 +145,7 @@
           <h3>Dexterous-Hand VLA Pipeline</h3>
           <p class="proj-meta">Real Robot Pipeline &middot; Teleoperation &middot; 22-DoF Arm-Hand Coordination</p>
           <p>
-            At Shanghai Jiao Tong University, I am building the teleoperation, data collection,
+            At Shanghai Jiao Tong University, I built the teleoperation, data collection,
             and evaluation stack for a LinkerHand O6 + xArm6 platform. This work grounds the
             real-robot side of my current interests, especially contact-rich data collection, dexterous
             action spaces, and deployment-time evaluation.
@@ -162,38 +182,19 @@
           <h3>Evo-SOTA &mdash; VLA Benchmark Leaderboard</h3>
           <p class="proj-meta">Benchmarking Infrastructure &middot; VLA Landscape Analysis &middot; Open Source</p>
           <p>
-            I built and maintain an open-source leaderboard tracking 136+ Vision-Language-Action
-            models across 6 benchmarks including LIBERO, CALVIN, Meta-World, and RoboChallenge.
+            I built and maintain an open-source leaderboard comparing Vision-Language-Action
+            models across eight benchmarks, including LIBERO, CALVIN, Meta-World, RoboChallenge,
+            and RoboTwin 2.0, alongside a dexterous-manipulation track.
             This project helps me systematically compare architectures, training data sources, and
             post-training strategies across the current VLA landscape.
           </p>
           <p class="proj-links">
-            <a href="https://github.com/rdlwicked/evo-sota" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/MINT-SJTU/Evo-SOTA.io" target="_blank" rel="noopener">GitHub</a>
             <a href="https://sota.evomind-tech.com/" target="_blank" rel="noopener">Website</a>
           </p>
         </div>
       </article>
 
-      <article class="proj">
-        <div class="proj-media proj-media-video">
-          <video muted loop playsinline controls preload="metadata">
-            <source src="/videos/roboclaw-demo.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="proj-body">
-          <h3>RoboClaw &mdash; Embodied AI Assistant</h3>
-          <p class="proj-meta">Embodied Agents &middot; ROS2 &middot; Autonomous Data Collection</p>
-          <p>
-            RoboClaw is an open-source framework for embodied AI assistance with natural-language
-            robot control, procedure selection, and ROS2 execution across simulation and real robots.
-            It gave me direct experience with agent orchestration and autonomous data-collection loops,
-            which continue to shape how I think about agent-based robotics systems.
-          </p>
-          <p class="proj-links">
-            <a href="https://github.com/MINT-SJTU/RoboClaw" target="_blank" rel="noopener">GitHub</a>
-          </p>
-        </div>
-      </article>
     </div>
   </section>
 
@@ -205,17 +206,31 @@
       <h2><a href="#experience" style="color: inherit">background</a></h2>
       <div class="exp-list">
         <div class="exp-item">
-          <div class="exp-date">2025 &mdash; Present</div>
+          <div class="exp-date">10/2026 &mdash; Present</div>
           <div class="exp-body">
-            <h3>Research Assistant &middot; Shanghai Jiao Tong University</h3>
-            <p>VLA benchmarking (Evo-SOTA) and dexterous-hand manipulation research. Building teleoperation, training, and evaluation pipelines for real-robot arm-hand coordination.</p>
+            <h3>PhD Student &middot; University College London</h3>
+            <p>Supervised by Zhibin Li. Research interests in multimodal foundation models, low-latency visuomotor policies, world models, and learning through physical interaction.</p>
           </div>
         </div>
         <div class="exp-item">
-          <div class="exp-date">2025</div>
+          <div class="exp-date">04/2026 &mdash; 10/2026</div>
+          <div class="exp-body">
+            <h3>Research Assistant &middot; University College London</h3>
+            <p>Research on foundation models and real-world robot learning. Completed the RAI project during this period, developing robot control, data collection, policy training, and evaluation infrastructure.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-date">12/2025 &mdash; 04/2026</div>
+          <div class="exp-body">
+            <h3>Research Assistant &middot; Shanghai Jiao Tong University</h3>
+            <p>Research with Professor Bo Zhao on Vision-Language-Action models for dexterous manipulation and VLA benchmarking (Evo-SOTA). Built teleoperation, data collection, training, and evaluation pipelines for a LinkerHand O6 + xArm6 platform.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-date">06/2025 &mdash; 12/2025</div>
           <div class="exp-body">
             <h3>Applied Scientist Intern &middot; Thomson Reuters Labs</h3>
-            <p>Developed agentic capabilities for Westlaw Deep Research Agent including multi-agent workflow orchestration. Benchmarked and fine-tuned small language models for guardrail classification.</p>
+            <p>Developed agentic capabilities for Westlaw Deep Research Agent and owned guardrails for query-intent classification and policy routing. Benchmarked and fine-tuned small language models for guardrail classification.</p>
           </div>
         </div>
         <div class="exp-item">
@@ -285,7 +300,7 @@
         <span class="sep">/</span>
         <a href="https://drive.google.com/file/d/1K73N2DSxgWx-KpYjoMT5HGPZa2O6FDzf/view" target="_blank" rel="noopener">Thesis</a>
       </div>
-      <p class="footer-note">Updated March 2026</p>
+      <p class="footer-note">Updated October 2026</p>
     </div>
   </footer>
 

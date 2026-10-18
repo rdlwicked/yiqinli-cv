@@ -361,6 +361,7 @@ h1 strong { font-weight: 700; }
 
 .proj-media img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -385,6 +386,20 @@ h1 strong { font-weight: 700; }
   margin-bottom: 4px;
 }
 
+#rai { scroll-margin-top: calc(var(--nav-h) + 20px); }
+.proj-figure { margin: 0; }
+.proj-figure figcaption {
+  color: var(--text-dim);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.proj-body .proj-eyebrow {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
 .proj-meta {
   font-size: 0.75rem;
   color: var(--text-dim);

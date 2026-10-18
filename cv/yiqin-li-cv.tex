@@ -1,0 +1,128 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[top=0.5in,bottom=0.5in,left=0.55in,right=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,urlcolor=blue!60!black,linkcolor=blue!60!black]{hyperref}
+\hypersetup{pdftitle={Yiqin Li -- Research CV},pdfauthor={Yiqin Li}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlist[itemize]{leftmargin=1.3em,itemsep=3pt,topsep=3.5pt,parsep=0pt,partopsep=0pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{0.2em}\titlerule]
+\titlespacing*{\section}{0pt}{0.8em}{0.45em}
+\pagestyle{empty}
+\newcommand{\project}[1]{\vspace{0.25em}\textit{#1}\par}
+% Public by default. Set \cvphone only when building a private formal copy.
+\providecommand{\cvphone}{}
+\begin{document}
+\raggedright
+\fontsize{11}{14}\selectfont
+
+{\LARGE\textbf{Yiqin Li}}\hfill\href{mailto:yiqinli230@gmail.com}{yiqinli230@gmail.com}\par
+\href{https://yiqinli-cv.pages.dev/}{yiqinli-cv.pages.dev}\hfill\cvphone\par
+\href{https://github.com/rdlwicked}{github.com/rdlwicked}\hfill
+\href{https://linkedin.com/in/yiqin-li}{linkedin.com/in/yiqin-li}
+\vspace{0.4em}\hrule\vspace{0.45em}
+
+PhD student at University College London, supervised by Zhibin Li. Interested in multimodal foundation models and low-latency visuomotor control for robust robot systems, and in world models and foundation models grounded in physical interaction.
+
+\section*{Education}
+\textbf{University College London, UK}\hfill 10/2026 -- Present\par
+\textit{PhD student}; supervised by Zhibin Li.
+\vspace{0.4em}\par
+\textbf{Imperial College London, UK}\hfill 10/2021 -- 07/2025\par
+\textit{MEng Computing (Artificial Intelligence \& Machine Learning)} -- First-class Honours\par
+Coursework: Deep Learning, Computer Vision, Reinforcement Learning, NLP, Robotics, Robot Learning.
+\vspace{0.4em}\par
+\textbf{Shrewsbury School, UK}\hfill 09/2016 -- 06/2021\par
+A Levels: Computer Science, Mathematics, Further Mathematics, Physics (all A*).
+
+\section*{Research Experience \& Projects}
+\textbf{University College London, London}\hfill 04/2026 -- 10/2026\par
+\textit{Research Assistant}
+
+% Submission status and authorship are intentionally omitted until confirmed.
+\project{RAI: Recursive Accelerated Imitation for Robot Manipulation}
+\begin{itemize}
+\item Contributed to recursive imitation learning that trains successive robot policies on accelerated rollouts with targeted human corrections.
+\item Worked on XR teleoperation, multimodal data collection, contact-force estimation, and real-time chunked deployment connecting 30\,Hz policy actions to 200\,Hz arm control.
+\item The project achieved 92.3\% mean full-trial success across four tasks versus 62.5\% for teleoperation with the same architecture and episode count; a separate cyclic task reached 2.46$\times$ the seed policy's throughput.
+\end{itemize}
+
+\vspace{0.3em}
+\textbf{Shanghai Jiao Tong University, Shanghai}\hfill 12/2025 -- 04/2026\par
+\textit{Research Assistant under Professor Bo Zhao}
+
+\project{Evo-SOTA -- Open-Source VLA Benchmark Leaderboard
+(\href{https://github.com/MINT-SJTU/Evo-SOTA.io}{GitHub}, \href{https://sota.evomind-tech.com/}{Website})}
+\begin{itemize}
+\item Built and maintained an open-source VLA leaderboard with interactive metric tables, visualisations, and paper/code links; now covers eight benchmarks and has 160+ GitHub stars.
+\end{itemize}
+
+\project{Dexterous-Hand VLA Pipeline}
+\begin{itemize}
+\item Built a real-robot data-collection system integrating LinkerHand O6, xArm6, and a UDCAP glove using ROS2 and UDP, with a stable logging pipeline for dexterous manipulation.
+\item Adapted Evo-1 for dexterous manipulation and established an end-to-end pipeline from demonstration collection and training to simulation/real-robot inference and evaluation.
+\end{itemize}
+
+\vspace{0.3em}
+\textbf{Language-Guided Imitation Learning for Tabletop Manipulation}\hfill 12/2024 -- 05/2025\par
+\textit{MEng Thesis, supervised by Professor Edward Johns}
+(\href{https://drive.google.com/file/d/1K73N2DSxgWx-KpYjoMT5HGPZa2O6FDzf/view}{Thesis},
+\href{https://drive.google.com/file/d/1KujpTWDKf0UbPRU1EWuXpjhngPI5dSma/view}{Demo})
+\begin{itemize}
+\item Built an LLM planner and behaviour-tree controller for multi-step tabletop manipulation, combining task decomposition, policy execution, and automatic failure recovery.
+\item Extended DINOBot to multi-task imitation learning in PyBullet with a Franka Panda; built an interface for non-expert users to clarify commands and teach new behaviours through demonstrations.
+\item In a controlled user study, achieved 100\% pick-and-place and 65.8\% multi-step success with recovery, 2.4$\times$ the zero-shot baseline; system mental demand was 1.0/7 (NASA-TLX).
+\end{itemize}
+
+\newpage
+\section*{Professional Experience}
+\textbf{Thomson Reuters Labs, London}\hfill 06/2025 -- 12/2025\par
+\textit{Applied Scientist Intern}
+\begin{itemize}
+\item \textbf{Agentic systems.} Developed capabilities for Westlaw Deep Research Agent; owned the guardrail subsystem for query-intent classification and policy routing.
+\item \textbf{Model fine-tuning and benchmarking.} Compared prompt-only baselines, proprietary models, and LoRA-tuned Qwen3 8B/14B for guardrail classification; applied data augmentation, probability calibration, and precision--recall threshold selection.
+\item \textbf{Evaluation infrastructure.} Enhanced an internal spaCy-based NLP pipeline converting LLM-generated answers into structured representations; evaluated five agent iterations using answer completeness and misattribution metrics to guide development.
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Huawei, London}\hfill 04/2024 -- 09/2024\par
+\textit{NLP Researcher Intern}
+\begin{itemize}
+\item \textbf{Knowledge graphs.} Built an LLM-based graph-construction pipeline on GPU clusters, generating domain-specific graphs with 30K+ nodes deployed in Huawei Browser; acknowledged in a Findings of ACL 2025 paper (\href{https://aclanthology.org/2025.findings-acl.602.pdf}{PDF}).
+\item \textbf{Data engineering.} Developed a production pipeline using Pydantic and Pandas to convert unstructured LLM-generated graphs into schema-aligned records, improving data integrity and maintainability.
+\item \textbf{NLP tooling.} Built a RAG/LLM pipeline for character-relation and attribute extraction, and an N-gram NER validation module for Huawei Reading; improved NER accuracy by 15\%+ on held-out tests.
+\end{itemize}
+
+\vspace{0.4em}
+\textbf{Shanghai Wicresoft, Shanghai}\hfill 07/2023 -- 08/2023\par
+\textit{Big Data Engineer Intern}
+\begin{itemize}
+\item \textbf{Knowledge graph and QA.} Built a Neo4j graph (10K nodes, 40K edges) and a rule-based pipeline converting unstructured legal clauses into structured records at approximately 90\% conversion for an AI-driven QA system.
+\item \textbf{Data processing.} Processed and cleaned 40,000+ entries to support model training and evaluation; developed a graph-access API for internal analysts.
+\end{itemize}
+
+\section*{Honours \& Awards}
+\begin{itemize}
+\item First place, Fitch Group Code for Good Codeathon
+\item UKIEPC 2023, Top 100
+\item Runner-up, Ripple X EasyA Hackathon
+\end{itemize}
+
+\section*{Technical Skills}
+\begin{itemize}
+\item \textbf{Programming:} Python, Kotlin, C, Haskell, SQL
+\item \textbf{Robot learning:} Imitation learning, flow-matching policies, real-time action chunking, human-in-the-loop data collection, multimodal policy deployment
+\item \textbf{Robotics and simulation:} ROS2, PyBullet, Isaac Sim/Lab, MuJoCo, XR teleoperation
+\item \textbf{ML and data:} PyTorch, LoRA, spaCy, Pydantic, Pandas, Neo4j
+\item \textbf{Languages:} English and Mandarin (fluent)
+\end{itemize}
+
+\section*{Interests}
+Basketball (Imperial College Men's 1st Team), rock climbing, mountaineering (Kilimanjaro summit).
+\end{document}
